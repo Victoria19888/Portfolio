@@ -1,0 +1,479 @@
+<!DOCTYPE html>    
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👩🏽‍💻</text></svg>">
+
+    <title>Victoria | Developer</title>
+    
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">VA</div>
+                <div class="hamburger" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#home" onclick="closeMenu()">Home</a></li>
+                    <li><a href="#about" onclick="closeMenu()">About</a></li>
+                    <li><a href="#experience" onclick="closeMenu()">Experience</a></li>
+                    <li><a href="#volunteering" onclick="closeMenu()">Volunteering</a></li>
+                    <li><a href="#projects" onclick="closeMenu()">Projects</a></li>
+                    <li><a href="#skills" onclick="closeMenu()">Skills</a></li>
+                    <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1><span class="encrypt">Victoria Asenuga</span></h1>
+                    <div class="about-window">
+                        <div class="window-header">
+                            <div class="window-buttons">
+                                <div class="window-button close"></div>
+                                <div class="window-button minimize"></div>
+                                <div class="window-button maximize"></div>
+                            </div>
+                        </div>
+                        <div class="window-content">
+                            <p>Hi, I’m Victoria Asenuga, a fourth-year Computer Science (Honors) student specializing in
+                                Networks and Security. I’m driven by curiosity and a passion for exploring how systems
+                                work and how to secure them. I enjoy experimenting with Linux, Wireshark, and Nmap,
+                                automating tasks, and finding smarter ways to solve problems while learning how to
+                                protect technology from vulnerabilities.</p>
+                        </div>
+                    </div>
+                    <a href="#contact" class="cta-button">Get In Touch</a>
+                </div>
+                <div class="hero-image">
+                    <img src="image.jpg" alt="Victoria Asenuga">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title fade-in"><span class="encrypt-title" data-text="About Me">About Me</span></h2>
+            <div class="about-content fade-in">
+                <div class="terminal-window">
+                    <div class="terminal-header">
+                        <div class="terminal-buttons">
+                            <div class="terminal-button close"></div>
+                            <div class="terminal-button minimize"></div>
+                            <div class="terminal-button maximize"></div>
+                        </div>
+                        <div class="terminal-title">bash</div>
+                    </div>
+                    <div class="terminal-content">
+                        <div class="terminal-line">
+                            <span class="terminal-prompt">victoria@portfolio:~$</span>
+                            <span class="terminal-text" id="terminalCommand"></span>
+                        </div>
+                        <div class="terminal-line" id="terminalOutput" style="display: none;">
+  <p class="terminal-text">My journey into computer science started in junior year of high school. I was curious about hackers and digital forensics, and by my third year, I already knew the different types of hackers from watching countless YouTube videos and taking computer science classes.</p>
+
+  <p class="terminal-text">What really drew me in wasn’t just cybersecurity itself, but the investigative side of it. I’ve always loved solving problems and figuring out how things work behind the scenes. Watching crime and forensic shows made me realize how much I enjoyed tracing clues, understanding motives, and uncovering how things connect. That same mindset easily translated into cybersecurity; where every vulnerability, exploit, or network issue is like a digital mystery waiting to be solved.</p>
+
+  <p class="terminal-text">Now I’m studying Computer Science (Honors) at the University of Windsor, specializing in Networks and Security. I’ve worked on projects that let me explore Linux, network analysis, and automation using tools like Wireshark and Nmap. My goal is to become a purple team hacker, combining both offensive and defensive skills to understand threats and build stronger protections...</p>
+</div>
+
+                        <div class="terminal-line" id="terminalCursor" style="display: none;">
+                            <span class="terminal-prompt">victoria@portfolio:~$</span>
+                            <span class="terminal-text"> █</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <div class="container">
+            <h2 class="section-title fade-in"><span class="encrypt-title" data-text="Experience">Experience</span></h2>
+            <div class="experience-timeline fade-in">
+                <div class="exp-card">
+                    <div class="exp-header">
+                        <div>
+                            <h3>Security Intern</h3>
+                            <p class="company">Glendor, Inc. — Remote, Winter 2026</p>
+                        </div>
+                    </div>
+                    <ul class="exp-bullets">
+                        <li>Served as main technical lead on MedVault, a privacy-focused offline mobile health application built with React Native, Expo, and TypeScript.</li>
+                        <li>Designed and implemented an offline login and signup system using expo-sqlite with no dependency on internet or cloud services.</li>
+                        <li>Implemented AES-256-GCM encryption for protecting stored medical files and SHA-256 hashing for file integrity verification.</li>
+                        <li>Built secure key and session storage using expo-secure-store backed by iOS Keychain after evaluating and ruling out iOS Secure Enclave due to Expo Go native module constraints.</li>
+                        <li>Managed tiered local storage architecture using expo-sqlite for structured data, AsyncStorage for general app data, and iOS Keychain for sensitive cryptographic values.</li>
+                    </ul>
+                </div>
+                <div class="exp-card">
+                    <div class="exp-header">
+                        <div>
+                            <h3>Network Security Engineer Intern</h3>
+                            <p class="company">TECH4SOFT Consulting — Mar 2026 &ndash; Present</p>
+                        </div>
+                    </div>
+                    <ul class="exp-bullets">
+                        <li>Designed and implemented secure Azure cloud infrastructure for a multi-agent GPT-based AI platform.</li>
+                        <li>Configured network segmentation, role-based access control (RBAC), and secure data storage within Azure environments.</li>
+                        <li>Contributed to secure DevOps workflows, including repository governance, CI/CD pipelines, and audit-ready documentation practices.</li>
+                    </ul>
+                </div>
+                <div class="exp-card">
+                    <div class="exp-header">
+                        <div>
+                            <h3>Systems Engineer Intern</h3>
+                            <p class="company">Inuvika Inc. — Jan 2026 &ndash; Present</p>
+                        </div>
+                    </div>
+                    <ul class="exp-bullets">
+                        <li>Developed a custom Ubuntu ISO for amd64 PCs to deploy Inuvika thin clients without user interaction.</li>
+                        <li>Validated the image and ISO using QEMU, Linux, Bash scripting, and virtual machines for testing and deployment.</li>
+                        <li>Documented installation and recovery procedures for future support teams.</li>
+                    </ul>
+                </div>
+                <div class="exp-card">
+                    <div class="exp-header">
+                        <div>
+                            <h3>Internship</h3>
+                            <p class="company">Code Ninjas — May 2025 &ndash; September 2025</p>
+                        </div>
+                    </div>
+                    <ul class="exp-bullets">
+                        <li>Taught coding concepts to students using Python, Java, and JavaScript.</li>
+                        <li>Guided students in troubleshooting code, developing strong problem-solving and analytical skills.</li>
+                        <li>Designed coding exercises that strengthened students’ logical thinking and problem-solving skills.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="volunteering">
+        <div class="container">
+            <h2 class="section-title fade-in"><span class="encrypt-title" data-text="Volunteering">Volunteering</span></h2>
+            <div class="experience-timeline fade-in">
+                <div class="exp-card">
+                    <div class="exp-header">
+                        <div>
+                            <h3>Recruitment Coordinator</h3>
+                            <p class="company">UWinCyberSec Club — March 2026 &ndash; Present</p>
+                        </div>
+                    </div>
+                    <ul class="exp-bullets">
+                        <li>Helped organize events and recruit members for the university cybersecurity club.</li>
+                        <li>Co-hosted the opening and closing ceremonies for the first-ever All-Clubs Hackathon, representing the cybersecurity club.</li>
+                        <li>Served as a judge at the University of Windsor Club Hacks competition.</li>
+                    </ul>
+                </div>
+                <div class="exp-card">
+                    <div class="exp-header">
+                        <div>
+                            <h3>Front-end Developer</h3>
+                            <p class="company">LANCER-SHIELD — Volunteer Project</p>
+                        </div>
+                    </div>
+                    <ul class="exp-bullets">
+                        <li>Built an athlete management website using Next.js (React), Tailwind CSS, TypeScript, Recharts, and Lucide React.</li>
+                        <li>Implemented website scraping for team wins/losses and future/previous game schedules.</li>
+                        <li>Added a secure login page and improved the overall user experience across the site.</li>
+                        <li>Enabled coaches to view athlete medical data, including who is able to play, needs a checkup, or is injured.</li>
+                        <li>Developed a PDF stripper for medical data processing to streamline reporting.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2 class="section-title fade-in"><span class="encrypt-title" data-text="Projects">Projects</span></h2>
+            <div class="projects-grid">
+                <div class="project-card fade-in">
+                    <div class="project-icon"><img src="36-364597_png-file-svg-dashboard-icon-black-and-white.png" alt="Wazuh Dashboard" class="icon-img"></div>
+                    <h3>Wazuh SIEM Lab</h3>
+                    <p class="project-tech encrypt-tech" data-tech="Wazuh, Kali Linux, Incident Response">Wazuh, Kali Linux,
+                        Incident Response</p>
+                    <p>Built an incident response lab using Wazuh and Kali Linux to simulate brute force attacks and detect
+                        adversary activity. Focused on real-time alerting for SSH attacks, file integrity changes, and
+                        root account tampering.</p>
+                    <a href="https://github.com/Victoria19888/SIEM" class="project-link" target="_blank" rel="noopener noreferrer">Check it Out</a>
+                </div>
+                <div class="project-card fade-in">
+                    <div class="project-icon">🍯</div>
+                    <h3>Honeypot</h3>
+                    <p class="project-tech encrypt-tech" data-tech="Cowrie, SSH, Python">Cowrie, SSH, Python</p>
+                    <p>Set up a vulnerable server exposed to the public internet to observe and analyze the tools and
+                        tactics attackers are using in real-time. This helps in understanding current threats and
+                        improving security measures.</p>
+                    <a href="#" class="project-link">Check it Out</a>
+                </div>
+                <div class="project-card fade-in">
+                    <div class="project-icon">🐧</div>
+                    <h3>Linux Homelab</h3>
+                    <p class="project-tech encrypt-tech" data-tech="Linux, Docker, Ansible, Bash">Linux, Docker,
+                        Ansible, Bash</p>
+                    <p>My Linux homelab is a self-hosting environment where I run various services and applications on
+                        Linux-based servers. It's a space for experimenting with open-source software, automation, and
+                        system administration skills.</p>
+                    <a href="#" class="project-link">Check it Out</a>
+                </div>
+                <div class="project-card fade-in">
+                    <div class="project-icon">🪟</div>
+                    <h3>Windows Homelab</h3>
+                    <p class="project-tech encrypt-tech" data-tech="Microsoft Azure, Active Directory, PowerShell">
+                        Microsoft Azure, Active Directory, PowerShell</p>
+                    <p>Created a cloud-based homelab using Microsoft Azure to explore cloud technologies. This setup
+                        allows me to experiment with virtual machines, cloud services, and infrastructure management in
+                        a flexible and scalable environment.</p>
+                    <a href="#" class="project-link">Check it Out</a>
+                </div>
+                <div class="project-card fade-in">
+                    <div class="project-icon">🔓</div>
+                    <h3>Password Cracking Lab</h3>
+                    <p class="project-tech encrypt-tech" data-tech="Hashcat, John the Ripper, Hydra">Hashcat, John the
+                        Ripper, Hydra</p>
+                    <p>Explored password strength and cracking techniques using industry-standard tools. Tested various
+                        password policies and hashing algorithms to understand password security and brute force attack
+                        methods.</p>
+                    <a href="#" class="project-link">Check it Out</a>
+                </div>
+                <div class="project-card fade-in">
+                    <div class="project-icon">🚩</div>
+                    <h3>CTF Challenges</h3>
+                    <p class="project-tech encrypt-tech" data-tech="Hack The Box, TryHackMe, PicoCTF">Hack The Box,
+                        TryHackMe, PicoCTF</p>
+                    <p>Participated in Capture The Flag challenges covering reverse engineering, cryptography, web
+                        exploitation, and digital forensics. Solved beginner to intermediate level challenges to sharpen
+                        practical cybersecurity skills.</p>
+                    <a href="#" class="project-link">Check it Out</a>
+                </div>
+                <div class="project-card fade-in">
+                    <div class="project-icon">🔥</div>
+                    <h3>NASA Wildfire Tracker</h3>
+                    <p class="project-tech encrypt-tech" data-tech="Python, Flask, NASA API, HTML, CSS, JavaScript">
+                        Python, Flask, NASA API, HTML, CSS, JavaScript</p>
+                    <p>Built a real-time wildfire data interface using NASA APIs. Integrated a Flask backend to fetch
+                        and process data. Designed a user interface with responsive web design.</p>
+                    <a href="#" class="project-link">Check it Out</a>
+                </div>
+                <div class="project-card fade-in">
+                    <div class="project-icon">🎤</div>
+                    <h3>Voice Assistant (Siri Clone)</h3>
+                    <p class="project-tech encrypt-tech" data-tech="Python, Speech Recognition, APIs">Python, Speech
+                        Recognition, APIs</p>
+                    <p>Developed a voice-activated assistant using Python that can perform various tasks through voice
+                        commands. Integrated multiple APIs for weather, news, and web searches with natural language
+                        processing.</p>
+                    <a href="#" class="project-link">Check it Out</a>
+                </div>
+                <div class="project-card fade-in">
+                    <div class="project-icon">⌨️</div>
+                    <h3>Keyboard Color Changer</h3>
+                    <p class="project-tech encrypt-tech" data-tech="Python, Aura SDK">Python, Aura SDK</p>
+                    <p>Developed a variety of dynamic lighting effects using Aura SDK and Python. Used library
+                        win32com.client to control and customize keyboard lighting effects dynamically.</p>
+                    <a href="#" class="project-link">Check it Out</a>
+                </div>
+                <div class="project-card fade-in">
+                    <div class="project-icon">🧮</div>
+                    <h3>Matrix Calculator</h3>
+                    <p class="project-tech encrypt-tech" data-tech="C++, STL">C++, STL</p>
+                    <p>Command line matrix calculator supporting addition, subtraction, multiplication, transpose,
+                        vector cross product and Gauss Jordan elimination. Used STL for efficient data storage and
+                        manipulation.</p>
+                    <a href="#" class="project-link">Check it Out</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2 class="section-title fade-in">
+                <span class="encrypt-title" data-text="Skills">Skills</span>
+            </h2>
+
+            <div class="skills-container fade-in">
+
+                <!-- Programming Languages -->
+                <div class="skills-category">
+                    <h3>Programming</h3>
+                    <div class="skills-grid">
+                        <div class="skill-tag">
+                            <div class="skill-icon"><i class="devicon-java-plain colored"></i></div>
+                            <div class="skill-name">Java</div>
+                        </div>
+                        <div class="skill-tag">
+                            <div class="skill-icon"><i class="devicon-python-plain colored"></i></div>
+                            <div class="skill-name">Python</div>
+                        </div>
+                        <div class="skill-tag">
+                            <div class="skill-icon"><i class="devicon-c-plain colored"></i></div>
+                            <div class="skill-name">C</div>
+                        </div>
+                        <div class="skill-tag">
+                            <div class="skill-icon"><i class="devicon-cplusplus-plain colored"></i></div>
+                            <div class="skill-name">C++</div>
+                        </div>
+                        <div class="skill-tag">
+                            <div class="skill-icon"><i class="devicon-bash-plain colored"></i></div>
+                            <div class="skill-name">Bash</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Web Development -->
+            <div class="skills-category">
+                <h3>Web Development</h3>
+                <div class="skills-grid">
+                    <div class="skill-tag">
+                        <div class="skill-icon"><i class="devicon-html5-plain colored"></i></div>
+                        <div class="skill-name">HTML</div>
+                    </div>
+                    <div class="skill-tag">
+                        <div class="skill-icon"><i class="devicon-css3-plain colored"></i></div>
+                        <div class="skill-name">CSS/SCSS</div>
+                    </div>
+                    <div class="skill-tag">
+                        <div class="skill-icon"><i class="devicon-javascript-plain colored"></i></div>
+                        <div class="skill-name">JavaScript</div>
+                    </div>
+                    <div class="skill-tag">
+                        <div class="skill-icon"><i class="devicon-mysql-plain colored"></i></div>
+                        <div class="skill-name">SQL</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tools & Technologies -->
+            <div class="skills-category">
+                <h3>Tools & Technologies</h3>
+                <div class="skills-grid">
+                    <div class="skill-tag">
+                        <div class="skill-icon"><i class="devicon-linux-plain colored"></i></div>
+                        <div class="skill-name">Linux</div>
+                    </div>
+                    <div class="skill-tag">
+                        <div class="skill-icon"><i class="devicon-windows8-original colored"></i></div>
+                        <div class="skill-name">Windows</div>
+                    </div>
+                    <div class="skill-tag">
+                        <div class="skill-icon"><i class="devicon-apple-original colored"></i></div>
+                        <div class="skill-name">macOS</div>
+                    </div>
+                    <div class="skill-tag">
+                        <div class="skill-icon"><i class="devicon-git-plain colored"></i></div>
+                        <div class="skill-name">Git</div>
+                    </div>
+                    <div class="skill-tag">
+                        <div class="skill-icon"><i class="devicon-github-original colored"></i></div>
+                        <div class="skill-name">GitHub</div>
+                    </div>
+                    <div class="skill-tag">
+                        <div class="skill-icon"><i class="devicon-docker-plain colored"></i></div>
+                        <div class="skill-name">Docker</div>
+                    </div>
+                    <div class="skill-tag">
+                        <div class="skill-icon"><i class="devicon-visualstudio-plain colored"></i></div>
+                        <div class="skill-name">Visual Studio</div>
+                    </div>
+                    <div class="skill-tag">
+                        <div class="skill-icon">📋</div>
+                        <div class="skill-name">Notepad++</div>
+                    </div>
+                    <div class="skill-tag">
+                        <div class="skill-icon">📊</div>
+                        <div class="skill-name">Office 365</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        </div>
+    </section>
+    <section id="certificates">
+        <div class="container">
+            <h2 class="section-title fade-in"><span class="encrypt-title" data-text="Certificates">Certificates</span></h2>
+            <div class="certificates-grid">
+                <div class="certificate-card fade-in">
+                    <div class="certificate-icon">🔒</div>
+                    <h3>CompTIA Security+ <span class="certificate-status">(In progress)</span></h3>
+                    <p>Security+ certified, practical threat management, access control, risk reduction, endpoint security focus.</p>
+                </div>
+                <div class="certificate-card fade-in">
+                    <div class="certificate-icon">🛡️</div>
+                    <h3>EC-Council NDE</h3>
+                    <p>Network Defense Essentials certification covering network security, threat detection, and defense strategies.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title fade-in"><span class="encrypt-title" data-text="Contact Me">Contact Me</span></h2>
+            <form class="contact-form fade-in" action="https://formsubmit.co/vasenuga@gmail.com" method="POST">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+            <div class="contact-links fade-in" style="display:flex; gap:20px; justify-content:center; margin-top:20px;">
+
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com/in/victoria-asenuga" target="_blank" class="contact-link"
+                    style="text-decoration:none; color:inherit; display:flex; align-items:center; gap:10px;">
+                    <i class="devicon-linkedin-plain colored" style="font-size:36px;"></i>
+                    <span>LinkedIn</span>
+                </a>
+
+                <!-- GitHub -->
+                <a href="https://github.com/Victoria19888" target="_blank" title="GitHub"
+                    style="text-decoration:none; color:inherit; display:flex; align-items:center; gap:10px;">
+                    <i class="devicon-github-original" style="font-size:36px; color:white;"></i>
+                    <span>GitHub</span>
+                </a>
+
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Victoria Asenuga. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
